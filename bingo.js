@@ -62,6 +62,9 @@ class BingoCards {
     }
 }
 
+/**
+ * Name_Of_Class: Bingo
+ */
 
 class Bingo {
     available_numbers = [];
@@ -72,6 +75,10 @@ class Bingo {
         }
     }
 
+    /**
+     * Function_Set: call_number
+     * return - random
+     */
     call_number() {
         if (this.available_numbers.length === 0) {
             return
@@ -81,6 +88,10 @@ class Bingo {
         return random
     }
 
+    /**
+     * Function_Set: check_card
+     * return - true or false
+     */
     check_card(card) {
         for (let number in card.get_card_numbers()) {
             if (number in this.available_numbers) {
